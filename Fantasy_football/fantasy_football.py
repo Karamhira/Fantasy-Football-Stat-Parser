@@ -13,9 +13,10 @@ def fantasy_football():
         year = str(input(
             "\nPlease enter what years stats you would like to see (Between 1990 and 2022)\nin the following format yyyy\n"))
         try: #Making sure the input given by user is a year, using try and except    
-            if int(year) >= 1990 and int(year) <=2020:
+            if int(year) >= 1990 and int(year) <=2022:
                 break 
             else:
+                print(int(year))
                 print('\nInvalid input, only years between 1990 and 2022')
         except : 
             print("\nPlease enter a valid input")
